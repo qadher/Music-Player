@@ -33,7 +33,7 @@ class SettingsController extends GetxController {
   void feedback() async {
     final Uri emailLaunchUri = Uri(
         scheme: 'mailto',
-        path: 'ihsanpv007@gmail.com',
+        path: 'developercontact00@gmail.com',
         query: 'subject=Feedback about Music Player app&body=');
 
     if (!await launchUrl(emailLaunchUri)) {
