@@ -49,7 +49,8 @@ class AboutScreen extends StatelessWidget {
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary),
                             recognizer: TapGestureRecognizer()
-                              ..onTap = _openMyProfile),
+                              // ..onTap = _openMyProfile),
+                              ..onTap = (){}),
                       ])),
                 ],
               ),
@@ -75,11 +76,5 @@ class AboutScreen extends StatelessWidget {
     );
   }
 
-  void _openMyProfile() async {
-    if (!await launchUrl(
-        Uri.parse('https://in.linkedin.com/in/ihsan-kottupadam'),
-        mode: LaunchMode.externalApplication)) {
-      log('failed to lauch url');
-    }
-  }
+  
 }
